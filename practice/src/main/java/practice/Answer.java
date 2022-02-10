@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Answeer {
+public class Answer {
 
 	public static void main(String[] args) {
 		
