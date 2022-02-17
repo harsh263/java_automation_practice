@@ -1,4 +1,5 @@
-package runners;
+package practice;
+
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -13,9 +14,9 @@ plugin={"html:target/cucumber-html-report",
 		"pretty:target/cucumber-pretty.txt",
 		"usage:target/cucumber-usage.json", 
 		"junit:target/cucumber-results.xml"},
-tags= {"@Harshhkh"}
+tags= {"@Nisha"}
 )
 
-public class TestRunner {
+public class TestRunnerFramework {
 	
 }

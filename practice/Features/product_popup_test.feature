@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@Harsh
+@Harsh234
 Feature: Products pop-up open and close test.
   I want to use this template for my feature file
 
@@ -25,7 +25,7 @@ Background:
 	When background test step2
 	When background test step3
 
-  @Harsh234
+  @Nisha
   Scenario: Title of your scenario outline
     Given User is on Home page of website
     When User click on each product card and close pop-up
