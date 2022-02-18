@@ -16,6 +16,6 @@ plugin={"html:target/cucumber-html-report",
 tags= {"@Harsh"}
 )
 
-public class TestRunner {
+public class TestRunnerJunit {
 	
 }
