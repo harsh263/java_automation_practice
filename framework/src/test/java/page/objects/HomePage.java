@@ -2,6 +2,7 @@ package page.objects;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 import base.functions.WebActions;
 
 public class HomePage {
+	
+	private static Logger logger = Logger.getLogger(HomePage.class);
 	
 	private WebDriver driver;
 	private WebActions action;
@@ -45,8 +48,15 @@ public class HomePage {
 		action.click_on_element(login_link);
 	}
 	
-	public boolean verify_successful_login() {
-		return action.visibility_of_element(your_basket_link);
+	public boolean verify_successful_login() throws InterruptedException {
+		Thread.sleep(1000);
+		if(driver.getCurrentUrl().contains("/#/search")) {
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	
 	public void change_pagination_value() {

@@ -88,7 +88,8 @@ public class RegistrationSteps {
 	public void fill_up_Registration_form_with_random_data_and_submit() throws Throwable {
 		regpage = new RegistrationPage(driver);
 		try {
-			random_email = regpage.fill_registration_form_and_submit();
+			random_email = regpage.fill_random_mail_id();
+			regpage.fill_registration_form_and_submit();
 			Reporter.addStepLog("Registration form filled up with random data and submitted.");
 		}
 		catch (Exception e) {

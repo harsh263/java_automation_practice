@@ -28,4 +28,3 @@ Feature: Title of your feature
     And Submit the registration form
     And Navigate to Login page
     Then Perform login and assert login
-

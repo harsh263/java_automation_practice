@@ -38,4 +38,5 @@ public class LoginPage {
 		action.input_text_in_element(input_password, password);
 		action.click_on_element(submit_login);
 	}
+
 }

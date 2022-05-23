@@ -5,10 +5,9 @@
 #Given: User is on Home page of the system under test.
 #When: Navigate to registration page and fill and submit form.
 #Then: To observe the successful registration and login.
-@smoke_feature
+@ui_smoke
 Feature: Registration feature
 
-  @smoke
   Scenario: Perform registration and login feature
     Given Open browser and Home page of website
     Given Accept cookies and welcome message
@@ -17,8 +16,6 @@ Feature: Registration feature
     And Fill up Registration form with random data and submit
     Then Verify successful Login using new user
     
-   
-   @sanity
    Scenario: Pagination test on Home page
    Given Open browser and Home page of website
    Given Accept cookies and welcome message

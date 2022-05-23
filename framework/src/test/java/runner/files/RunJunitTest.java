@@ -19,7 +19,7 @@ import utilities.PropertyFileHandler;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/featureFiles",
 glue = "step.definitions",
-tags = "@smoke_feature", 
+tags = "@ui_regression", 
 plugin = { "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/report.html"})
 		
 public class RunJunitTest {	

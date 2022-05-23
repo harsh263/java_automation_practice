@@ -1,7 +1,7 @@
 #Author: harsh.shah263@gmail.com
 #Keywords Summary :
 #Feature: Verify response code all the API requests.
-@smoke1
+@api_smoke
 Feature: Title of your feature
   I want to use this template for my feature file
 
