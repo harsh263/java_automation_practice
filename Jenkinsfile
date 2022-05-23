@@ -5,6 +5,8 @@ pipeline {
             steps {
                 echo "We are in buils step"
 				sh 'mvn -version'
+				sh 'cd practice'
+				sh 'mvn -test'
             }
         }
     }
