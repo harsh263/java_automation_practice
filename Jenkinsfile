@@ -3,11 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "We are in buils step"
+                echo "We are in buil step"
 				sh 'mvn -version'
-				sh 'PATH=${env.WORKSPACE}/practice/pom.xml'
 				echo "Current workspace is ${env.WORKSPACE}"
-				sh 'mvn -f PATH test'
+				sh 'mvn -f ${env.WORKSPACE}/practice test'
             }
         }
     }
