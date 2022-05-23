@@ -5,8 +5,9 @@ pipeline {
             steps {
                 echo "We are in buils step"
 				sh 'mvn -version'
-				echo "Current workspace is ${env.WORKSPACE}"
-				sh 'mvn -f /practice/pom.xml test'
+				PATH=${env.WORKSPACE}/practice/pom.xml
+				echo PATH
+				sh 'mvn -f PATH test'
             }
         }
     }
