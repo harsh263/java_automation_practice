@@ -4,8 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-				sh cd practice
-				sh mvn test
+				sh 'cd practice'
+				sh 'mvn test'
             }
         }
     }
