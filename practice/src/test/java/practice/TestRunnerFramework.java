@@ -14,7 +14,7 @@ plugin={"html:target/cucumber-html-report",
 		"pretty:target/cucumber-pretty.txt",
 		"usage:target/cucumber-usage.json", 
 		"junit:target/cucumber-results.xml"},
-tags= {"@Nisha"}
+tags= {"@tag1"}
 )
 
 public class TestRunnerFramework {
